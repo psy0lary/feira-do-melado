@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Título Elegante Aqui</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Feira do Melado - Capanema</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <nav class="main-nav">
-                <a href="#" class="logo">Seu Logotipo</a>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="hero-content">
-                <h1>Design que Inspira, Soluções que Encantam.</h1>
-                <p>Criando experiências digitais elegantes e impactantes para o seu público.</p>
-                <a href="#contact" class="btn primary-btn">Fale Conosco</a>
-            </div>
-        </div>
-    </header>
 
-    <main>
-        <section id="about" class="section-padded">
-            <div class="container">
-                <h2 class="section-title">Sobre Nós</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>Somos uma equipe apaixonada por design e inovação, dedicada a transformar ideias em realidade digital. Com anos de experiência no mercado, nossa missão é oferecer soluções personalizadas que não apenas atendam, mas superem as expectativas de nossos clientes.</p>
-                        <p>Acreditamos que um bom design é a chave para comunicar sua mensagem de forma eficaz e criar uma conexão duradoura com seu público. Nossa abordagem é centrada no usuário, garantindo interfaces intuitivas e esteticamente agradáveis.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://via.placeholder.com/500x350/D4AF37/ffffff?text=Nossa+Visao" alt="Visão da Equipe">
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Tela de Cadastro -->
+<div class="cadastro-container" id="cadastro">
+  <div class="cadastro-box">
+    <h1>Bem-vindo à Feira do Melado</h1>
+    <p>Cadastre-se para acessar o conteúdo do site</p>
+    <input type="text" placeholder="Nome completo" required>
+    <input type="email" placeholder="E-mail" required>
+    <button onclick="entrar()">Entrar</button>
+  </div>
+</div>
 
-        <section id="services" class="section-padded bg-light">
-            <div class="container">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <i class="icon-design"></i> <h3>Web Design</h3>
-                        <p>Criação de sites responsivos e otimizados, com foco na experiência do usuário e na estética moderna.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="icon-dev"></i> <h3>Desenvolvimento</h3>
-                        <p>Implementação robusta e escalável, utilizando as tecnologias mais recentes para performance e segurança.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="icon-branding"></i> <h3>Branding</h3>
-                        <p>Construção de identidade visual forte e memorável, que reflita a essência da sua marca.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Conteúdo Principal -->
+<div class="main-content" id="site">
+  <div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Programação</a>
+    <a href="#">Expositores</a>
+    <a href="#">Galeria</a>
+    <a href="#">Contato</a>
+  </div>
 
-        <section id="portfolio" class="section-padded">
-            <div class="container">
-                <h2 class="section-title">Nosso Portfólio</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/400x300/A0522D/ffffff?text=Projeto+01" alt="Projeto 1">
-                        <div class="item-overlay">
-                            <h3>Nome do Projeto
+  <div class="conteudo">
+    <div class="card">
+      <h3>Sobre a Feira</h3>
+      <p>A Feira do Melado é um evento tradicional de Capanema-PR que celebra a cultura, agricultura e culinária local com destaque ao melado artesanal.</p>
+    </div>
+    <div class="card">
+      <h3>Shows e Atrações</h3>
+      <p>Apresentações musicais, danças típicas, gastronomia e muito mais aguardam os visitantes!</p>
+    </div>
+    <div class="card">
+      <h3>Produtos Locais</h3>
+      <p>Melado, doces caseiros, artesanato e produtos da agricultura familiar estarão disponíveis para venda e degustação.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function entrar() {
+    document.getElementById('cadastro').style.display = 'none';
+    document.getElementById('site').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
