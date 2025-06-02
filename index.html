@@ -7,7 +7,6 @@
 </head>
 <body>
 
-<!-- Tela de Cadastro -->
 <div class="cadastro-container" id="cadastro">
   <div class="cadastro-box">
     <h1>Bem-vindo à Feira do Melado</h1>
@@ -18,14 +17,12 @@
   </div>
 </div>
 
-<!-- Conteúdo Principal -->
 <div class="main-content" id="site">
   <div class="menu">
-    <a href="#">Início</a>
-    <a href="#">Programação</a>
-    <a href="#">Expositores</a>
-    <a href="#">Galeria</a>
-    <a href="#">Contato</a>
+    <a href="index.html">Início</a> <a href="programacao.html">Programação</a>
+    <a href="expositores.html">Expositores</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
   </div>
 
   <div class="conteudo">
@@ -46,6 +43,7 @@
 
 <script>
   function entrar() {
+    // Você pode adicionar uma validação dos campos aqui antes de ocultar o formulário.
     document.getElementById('cadastro').style.display = 'none';
     document.getElementById('site').style.display = 'block';
   }
