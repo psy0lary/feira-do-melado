@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título do Meu Site</title>
+    <title>Seu Título Elegante Aqui</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Nome do Meu Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">Seu Logotipo</a>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Design que Inspira, Soluções que Encantam.</h1>
+                <p>Criando experiências digitais elegantes e impactantes para o seu público.</p>
+                <a href="#contact" class="btn primary-btn">Fale Conosco</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Bem-vindo!</h2>
-            <p>Este é o conteúdo da seção de início do seu site.</p>
+        <section id="about" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Sobre Nós</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Somos uma equipe apaixonada por design e inovação, dedicada a transformar ideias em realidade digital. Com anos de experiência no mercado, nossa missão é oferecer soluções personalizadas que não apenas atendam, mas superem as expectativas de nossos clientes.</p>
+                        <p>Acreditamos que um bom design é a chave para comunicar sua mensagem de forma eficaz e criar uma conexão duradoura com seu público. Nossa abordagem é centrada no usuário, garantindo interfaces intuitivas e esteticamente agradáveis.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x350/D4AF37/ffffff?text=Nossa+Visao" alt="Visão da Equipe">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Aqui você pode falar um pouco sobre a sua empresa ou sobre você.</p>
+        <section id="services" class="section-padded bg-light">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="icon-design"></i> <h3>Web Design</h3>
+                        <p>Criação de sites responsivos e otimizados, com foco na experiência do usuário e na estética moderna.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-dev"></i> <h3>Desenvolvimento</h3>
+                        <p>Implementação robusta e escalável, utilizando as tecnologias mais recentes para performance e segurança.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-branding"></i> <h3>Branding</h3>
+                        <p>Construção de identidade visual forte e memorável, que reflita a essência da sua marca.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li>Serviço 1</li>
-                <li>Serviço 2</li>
-                <li>Serviço 3</li>
-            </ul>
-        </section>
-
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <p>Preencha o formulário abaixo para nos contatar.</p>
-            <form>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome"><br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Nome do Meu Site. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <section id="portfolio" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Nosso Portfólio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/400x300/A0522D/ffffff?text=Projeto+01" alt="Projeto 1">
+                        <div class="item-overlay">
+                            <h3>Nome do Projeto
