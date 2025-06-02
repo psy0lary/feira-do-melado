@@ -1,108 +1,84 @@
+/* Reset básico para garantir consistência em todos os navegadores */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura total */
+  margin: 0;             /* Remove margens padrão dos elementos */
+  padding: 0;            /* Remove paddings padrão dos elementos */
+  font-family: 'Segoe UI', sans-serif; /* Fonte padrão para todo o site */
 }
 
+/* Estilos para o corpo da página */
 body {
-  background-color: #fdf6e3;
-  color: #333;
+  background-color: #fdf6e3; /* Cor de fundo suave */
+  color: #333;             /* Cor do texto principal */
 }
-
-/* REMOVA ou COMENTE as regras de CSS abaixo se não for usar a tela de cadastro */
-/*
-.cadastro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #f4c430, #c97d10);
-  color: #fff;
-}
-
-.cadastro-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  text-align: center;
-}
-
-.cadastro-box h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.cadastro-box input {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 10px;
-}
-
-.cadastro-box button {
-  padding: 12px 30px;
-  border: none;
-  background-color: #5d3b00;
-  color: #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.cadastro-box button:hover {
-  background-color: #3e2800;
-}
-*/
 
 /* Garante que o conteúdo principal sempre seja exibido */
 .main-content {
-  display: block; /* MUDE ou CONFIRME que está 'block' */
+  display: block; /* Essencial: assegura que o conteúdo esteja visível */
+  /* Min-height para garantir que o conteúdo ocupe a altura total da tela */
+  min-height: 100vh;
 }
 
+/* Estilos para o menu de navegação */
 .menu {
-  background-color: #5d3b00;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background-color: #5d3b00; /* Cor de fundo escura, tema melado */
+  color: white;             /* Cor do texto do menu */
+  padding: 20px;            /* Espaçamento interno */
+  display: flex;            /* Usa Flexbox para organizar os itens do menu */
+  justify-content: space-around; /* Distribui os itens igualmente no espaço */
+  align-items: center;      /* Centraliza os itens verticalmente */
+  flex-wrap: wrap;          /* Permite que os itens quebrem linha em telas pequenas */
+  position: relative;       /* Garante que o menu não seja sobreposto por outros elementos */
+  z-index: 10;              /* Coloca o menu acima de outros conteúdos padrão */
 }
 
+/* Estilos para os links dentro do menu */
 .menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  color: white;             /* Cor do texto do link */
+  text-decoration: none;    /* Remove o sublinhado padrão dos links */
+  font-weight: bold;        /* Deixa o texto em negrito */
+  padding: 10px 15px;       /* Área clicável maior */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  border-radius: 5px;       /* Cantos levemente arredondados */
+  display: inline-block;    /* Permite padding e transições mais controladas */
 }
 
+/* Estilos para o link do menu ao passar o mouse */
 .menu a:hover {
-  color: #f4c430;
+  color: #5d3b00;           /* Muda a cor do texto */
+  background-color: #f4c430; /* Muda a cor de fundo para um destaque */
 }
 
+/* Estilos para a área de conteúdo principal (cards) */
 .conteudo {
-  padding: 40px;
-  display: grid;
+  padding: 40px;            /* Espaçamento interno em volta das cards */
+  display: grid;            /* Usa Grid para organizar as cards */
+  /* Colunas responsivas: mínimo de 250px, preenche o espaço disponível */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 20px;                /* Espaçamento entre as cards */
 }
 
+/* Estilos para cada card individual */
 .card {
-  background-color: #fff8e1;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  background-color: #fff8e1; /* Cor de fundo clara para a card */
+  border-radius: 15px;      /* Cantos arredondados */
+  padding: 20px;            /* Espaçamento interno da card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+  transition: transform 0.2s ease; /* Transição suave ao passar o mouse */
 }
 
+/* Estilos para a card ao passar o mouse */
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Aumenta ligeiramente a card */
 }
 
+/* Estilos para o título dentro de cada card */
 .card h3 {
-  color: #5d3b00;
+  color: #5d3b00; /* Cor do título da card */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Estilos para o parágrafo dentro de cada card */
+.card p {
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
 }
