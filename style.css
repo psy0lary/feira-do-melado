@@ -10,6 +10,8 @@ body {
   color: #333;
 }
 
+/* REMOVA ou COMENTE as regras de CSS abaixo se não for usar a tela de cadastro */
+/*
 .cadastro-container {
   display: flex;
   flex-direction: column;
@@ -55,9 +57,11 @@ body {
 .cadastro-box button:hover {
   background-color: #3e2800;
 }
+*/
 
+/* Garante que o conteúdo principal sempre seja exibido */
 .main-content {
-  display: none;
+  display: block; /* MUDE ou CONFIRME que está 'block' */
 }
 
 .menu {
