@@ -6,16 +6,13 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
+body {
   background: #fff8dc;
   color: #5b3a00;
   font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza horizontalmente */
-  text-align: center;  /* centraliza texto */
-  min-height: 100vh;
 }
 
 header {
@@ -36,7 +33,6 @@ nav {
 }
 
 nav a {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -51,14 +47,11 @@ nav a:hover {
 }
 
 main {
-  flex: 1 0 auto;
   max-width: 700px;
   width: 90%;
   margin: 40px auto;
   padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centraliza conteúdos dentro do main */
+  text-align: center; /* só o conteúdo principal centralizado */
 }
 
 h1 {
@@ -71,15 +64,14 @@ h1 {
 p {
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 600px;
   margin-bottom: 30px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 400px;
+  margin: 0 auto;
   align-items: center;
 }
 
@@ -115,10 +107,4 @@ input[type="submit"]:hover {
 footer {
   background-color: #deb887;
   width: 100%;
-  padding: 15px 0;
-  color: #5b3a00;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  flex-shrink: 0;
-}
+  padding
