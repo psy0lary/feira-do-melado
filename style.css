@@ -6,13 +6,16 @@
   padding: 0;
 }
 
-body {
+html, body {
+  height: 100%;
   background: #fff8dc;
   color: #5b3a00;
   font-family: 'Raleway', sans-serif;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center; /* centraliza horizontalmente o layout */
+  text-align: center;  /* centraliza texto globalmente */
+  min-height: 100vh;
 }
 
 header {
@@ -33,6 +36,7 @@ nav {
 }
 
 nav a {
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -47,9 +51,73 @@ nav a:hover {
 }
 
 main {
-  flex-grow: 1;
+  flex: 1 0 auto;
   max-width: 700px;
   width: 90%;
   margin: 40px auto;
   padding: 0 20px;
-  text-align:
+  /* REMOVIDO: display:flex e align-items para não centralizar todo o main */
+  text-align: center; /* Centraliza só o texto do main */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 30px auto; /* centraliza o parágrafo com margin auto lateral */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* centraliza o formulário */
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #deb887;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #a0522d;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #8b4513;
+}
+
+footer {
+  background-color: #deb887;
+  width: 100%;
+  padding: 15px 0;
+  color: #5b3a00;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
