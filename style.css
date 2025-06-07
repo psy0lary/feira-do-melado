@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff8dc;
   margin: 0;
   padding: 0;
@@ -8,8 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center;   /* centraliza horizontalmente */
-  text-align: center;    /* centraliza texto */
+  align-items: center; /* centraliza horizontalmente */
+  text-align: center;  /* centraliza texto */
 }
 
 header {
@@ -17,7 +23,7 @@ header {
   padding: 10px 20px;
   width: 100%;
   display: flex;
-  justify-content: center;  /* centraliza o conteúdo do header */
+  justify-content: center; /* centraliza horizontalmente */
   align-items: center;
 }
 
@@ -33,44 +39,51 @@ nav a {
   color: #5b3a00;
   text-decoration: none;
   margin: 0 15px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #8b4513;
 }
 
 main {
   max-width: 800px;
+  width: 100%;
   margin: 40px auto;
   padding: 0 20px;
-  width: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;  /* centraliza form */
+  margin: 0 auto;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 10px;
-  margin: 10px 0;
+  padding: 12px;
+  margin: 12px 0;
   border: 2px solid #deb887;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 input[type="submit"] {
   background-color: #a0522d;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -81,7 +94,9 @@ footer {
   background-color: #deb887;
   color: #5b3a00;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
-  margin-top: auto; /* faz o footer ir para baixo */
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
