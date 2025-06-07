@@ -1,107 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #fff8dc;
   margin: 0;
   padding: 0;
-  color: #5b3a00;
-
+  color: #4b3a1b;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center; /* centraliza horizontalmente */
-  text-align: center;  /* centraliza texto */
+  align-items: center;
+  /* Sem text-align no body para não centralizar tudo */
 }
 
 header {
-  background-color: #deb887;
-  padding: 10px 20px;
+  background-color: #c89f65;
+  padding: 15px 30px;
   width: 100%;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: flex-start;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
+  margin-right: 25px;
 }
 
 nav {
-  margin-left: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-  color: #5b3a00;
+  color: #4b3a1b;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   transition: color 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 8px;
+  border-radius: 6px;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #8b4513;
+  background-color: #a9742a;
+  color: white;
 }
 
 main {
-  max-width: 800px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-family: 'Playfair Display', serif;
+  max-width: 1000px;
+  width: 95%;
+  margin: 110px auto 60px; /* topo considerando header fixo */
+  padding: 0 10px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 25px;
+  color: #5a4320;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #5a4320dd;
+}
+
+/* Formulário */
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
+  max-width: 420px;
+  margin: 0 auto 50px auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 12px;
-  margin: 12px 0;
-  border: 2px solid #deb887;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  padding: 14px;
+  margin: 14px 0;
+  border: 2px solid #c89f65;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #a9742a;
+  outline: none;
 }
 
 input[type="submit"] {
-  background-color: #a0522d;
+  background-color: #a9742a;
   color: white;
-  padding: 12px;
+  padding: 15px;
   border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
   transition: background-color 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
 }
 
 input[type="submit"]:hover {
-  background-color: #8b4513;
+  background-color: #7b5c15;
 }
 
-footer {
-  background-color: #deb887;
-  color: #5b3a00;
-  text-align: center;
-  padding: 12px;
+/* Galeria estilo Pinterest */
+.gallery {
+  column-count: 4;
+  column-gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+@media (max-width: 1100px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 750px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+.gallery-item {
+  background: white;
+  display: inline-block;
+  margin: 0 0 20px;
   width: 100%;
-  margin-top: auto;
-  font-size: 0.9rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.gallery-item .desc {
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #5a4320dd;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Rodapé */
+footer {
+  background-color: #c89f65;
+  color: #4b3a1b;
+  width: 100%;
+  padding: 15px 30px;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  text-align: left;
+  margin-top: auto;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
 }
