@@ -1,167 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: #fff8dc;
-  margin: 0;
-  padding: 0;
-  color: #5b3a00;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center; /* centraliza horizontalmente */
-  text-align: center;  /* centraliza texto */
-}
-
-header {
-  background-color: #deb887;
-  padding: 10px 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;
-}
-
-.logo {
-  height: 60px;
-}
-
-nav {
-  margin-left: 20px;
-}
-
-nav a {
-  color: #5b3a00;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #8b4513;
-}
-
-main {
-  max-width: 800px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-family: 'Lora', serif;
-  text-align: center; /* centraliza só conteúdo principal */
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
-}
-
-input[type="text"],
-input[type="email"] {
-  padding: 12px;
-  margin: 12px 0;
-  border: 2px solid #deb887;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
-}
-
-input[type="submit"] {
-  background-color: #a0522d;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-input[type="submit"]:hover {
-  background-color: #8b4513;
-}
-
-footer {
-  background-color: #deb887;
-  color: #5b3a00;
-  text-align: left;
-  padding: 12px 20px;
-  width: 100%;
-  margin-top: auto;
-  font-size: 0.9rem;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* Galeria estilo Pinterest */
-
 .gallery {
-  column-count: 4;
-  column-gap: 20px;
-  max-width: 800px;
-  margin: 40px auto;
+  column-count: 3;
+  column-gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-@media (max-width: 1100px) {
-  .gallery {
-    column-count: 3;
-  }
+.gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(91, 58, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-@media (max-width: 750px) {
+.gallery img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 900px) {
   .gallery {
     column-count: 2;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .gallery {
     column-count: 1;
   }
-}
-
-.gallery-item {
-  background: white;
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  break-inside: avoid;
-}
-
-.gallery-item:hover {
-  transform: translateY(-6px);
-}
-
-.gallery-item img {
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #eee;
-  border-radius: 12px 12px 0 0;
-}
-
-.gallery-item .desc {
-  padding: 15px;
-  color: #5b3a00dd;
-  font-size: 1rem;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
 }
