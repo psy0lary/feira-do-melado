@@ -1,109 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html, body {
-  height: 100%;
+body {
+  font-family: 'Montserrat', sans-serif;
   background: #fff8dc;
+  margin: 0;
+  padding: 0;
   color: #5b3a00;
-  font-family: 'Raleway', sans-serif;
+
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza layout horizontalmente */
-  /* REMOVIDO text-align: center daqui */
   min-height: 100vh;
+  align-items: center; /* centraliza horizontalmente */
+  text-align: center;  /* centraliza texto */
 }
 
 header {
   background-color: #deb887;
+  padding: 10px 20px;
   width: 100%;
-  padding: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centraliza horizontalmente */
   align-items: center;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
 }
 
 nav {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 nav a {
-  font-family: 'Raleway', sans-serif;
+  color: #5b3a00;
+  text-decoration: none;
+  margin: 0 15px;
   font-weight: 600;
   font-size: 1.1rem;
-  text-decoration: none;
-  color: #5b3a00;
-  margin: 0 15px;
   transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
-  color: #8b4513;
   text-decoration: underline;
+  color: #8b4513;
 }
 
 main {
-  flex: 1 0 auto;
-  max-width: 700px;
-  width: 90%;
+  max-width: 800px;
+  width: 100%;
   margin: 40px auto;
   padding: 0 20px;
-  text-align: center; /* CENTRALIZA SÓ O CONTEÚDO DO MAIN */
-}
-
-h1 {
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 30px auto; /* centraliza texto dentro do main */
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 400px;
-  margin: 0 auto; /* centraliza o formulário */
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input[type="text"],
 input[type="email"] {
-  width: 100%;
-  padding: 14px;
+  padding: 12px;
   margin: 12px 0;
   border: 2px solid #deb887;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-family: 'Raleway', sans-serif;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input[type="submit"] {
-  width: 100%;
-  padding: 14px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 10px;
   background-color: #a0522d;
   color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
+  margin-top: 15px;
   transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input[type="submit"]:hover {
@@ -112,11 +96,12 @@ input[type="submit"]:hover {
 
 footer {
   background-color: #deb887;
-  width: 100%;
-  padding: 15px 20px;
   color: #5b3a00;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  margin-top: auto;
+  font-size: 0.9rem;
   font-weight: 600;
-  font-size: 1rem;
-  text-align: left; /* agora o footer NÃO fica centralizado */
-  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
 }
