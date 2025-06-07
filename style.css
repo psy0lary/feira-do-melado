@@ -13,8 +13,8 @@ html, body {
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza horizontalmente o layout */
-  text-align: center;  /* centraliza texto globalmente */
+  align-items: center; /* centraliza layout horizontalmente */
+  /* REMOVIDO text-align: center daqui */
   min-height: 100vh;
 }
 
@@ -56,8 +56,7 @@ main {
   width: 90%;
   margin: 40px auto;
   padding: 0 20px;
-  /* Removido display:flex e align-items */
-  text-align: center; /* Centraliza só o texto do main */
+  text-align: center; /* CENTRALIZA SÓ O CONTEÚDO DO MAIN */
 }
 
 h1 {
@@ -71,7 +70,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 600px;
-  margin: 0 auto 30px auto; /* centraliza o parágrafo com margin auto lateral */
+  margin: 0 auto 30px auto; /* centraliza texto dentro do main */
 }
 
 form {
@@ -114,10 +113,10 @@ input[type="submit"]:hover {
 footer {
   background-color: #deb887;
   width: 100%;
-  padding: 15px 20px; /* adicionei padding lateral */
+  padding: 15px 20px;
   color: #5b3a00;
   font-weight: 600;
   font-size: 1rem;
-  text-align: left; /* alinhado à esquerda */
+  text-align: left; /* agora o footer NÃO fica centralizado */
   flex-shrink: 0;
 }
