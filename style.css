@@ -1,112 +1,77 @@
-/* style.css */
-
-* {
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8dc;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  background: #fff8e1;
-  color: #4e3200;
-  line-height: 1.6;
+  color: #5b3a00;
 }
 
 header {
-  background: #ffcc80;
+  background-color: #deb887;
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  border-bottom: 2px solid #d6a000;
 }
 
-header img.logo {
+.logo {
   height: 60px;
 }
 
 nav {
-  flex-grow: 1;
+  margin-left: auto;
 }
 
 nav a {
+  color: #5b3a00;
   text-decoration: none;
-  color: #4e3200;
+  margin-left: 20px;
   font-weight: bold;
-  margin-right: 20px;
-  font-size: 1rem;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #d6a000;
+  text-decoration: underline;
 }
 
 main {
-  padding: 20px;
-  max-width: 960px;
-  margin: 20px auto;
-  background: #fff3cd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #d6a000;
-  min-height: 70vh;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-h1, h2 {
-  color: #a46200;
-  margin-bottom: 15px;
-}
-
-/* Formulário cadastro */
 form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  gap: 15px;
 }
 
 input[type="text"],
-input[type="email"],
-input[type="submit"] {
+input[type="email"] {
   padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #d6a000;
+  margin: 10px 0;
+  border: 2px solid #deb887;
   border-radius: 5px;
 }
 
 input[type="submit"] {
-  background: #d6a000;
+  background-color: #a0522d;
   color: white;
-  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background: #b48700;
+  background-color: #8b4513;
 }
 
-/* Galeria estilo Pinterest */
-.pinterest {
-  column-count: 3;
-  column-gap: 15px;
-}
-
-.pinterest img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-/* Rodapé */
 footer {
-  background: #ffcc80;
+  background-color: #deb887;
+  color: #5b3a00;
   text-align: center;
-  padding: 10px 20px;
-  margin-top: 30px;
-  font-weight: bold;
-  color: #4e3200;
-  border-top: 2px solid #d6a000;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
