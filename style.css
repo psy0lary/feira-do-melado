@@ -4,12 +4,20 @@ body {
   margin: 0;
   padding: 0;
   color: #5b3a00;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;   /* centraliza horizontalmente */
+  text-align: center;    /* centraliza texto */
 }
 
 header {
   background-color: #deb887;
   padding: 10px 20px;
+  width: 100%;
   display: flex;
+  justify-content: center;  /* centraliza o conteúdo do header */
   align-items: center;
 }
 
@@ -18,13 +26,13 @@ header {
 }
 
 nav {
-  margin-left: auto;
+  margin-left: 20px;
 }
 
 nav a {
   color: #5b3a00;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 15px;
   font-weight: bold;
 }
 
@@ -36,12 +44,14 @@ main {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  margin: 0 auto;  /* centraliza form */
 }
 
 input[type="text"],
@@ -60,6 +70,7 @@ input[type="submit"] {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 input[type="submit"]:hover {
@@ -71,7 +82,6 @@ footer {
   color: #5b3a00;
   text-align: center;
   padding: 10px;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  margin-top: auto; /* faz o footer ir para baixo */
 }
