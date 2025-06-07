@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,126 +9,112 @@ body {
   background: #fff8dc;
   margin: 0;
   padding: 0;
-  color: #4b3a1b;
+  color: #5b3a00;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center;
-  /* Sem text-align no body para não centralizar tudo */
+  align-items: center; /* centraliza horizontalmente */
+  text-align: center;  /* centraliza texto */
 }
 
 header {
-  background-color: #c89f65;
-  padding: 15px 30px;
+  background-color: #deb887;
+  padding: 10px 20px;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; /* centraliza horizontalmente */
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
-  height: 55px;
-  margin-right: 25px;
+  height: 60px;
 }
 
 nav {
-  display: flex;
-  gap: 20px;
+  margin-left: 20px;
 }
 
 nav a {
-  color: #4b3a1b;
+  color: #5b3a00;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
-  padding: 5px 8px;
-  border-radius: 6px;
 }
 
 nav a:hover {
-  background-color: #a9742a;
-  color: white;
+  text-decoration: underline;
+  color: #8b4513;
 }
 
 main {
-  max-width: 1000px;
-  width: 95%;
-  margin: 110px auto 60px; /* topo considerando header fixo */
-  padding: 0 10px;
-  font-family: 'Merriweather', serif;
-  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Lora', serif;
+  text-align: center; /* centraliza só conteúdo principal */
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  margin-bottom: 25px;
-  color: #5a4320;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #5a4320dd;
-}
-
-/* Formulário */
 form {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
-  margin: 0 auto 50px auto;
+  max-width: 400px;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 14px;
-  margin: 14px 0;
-  border: 2px solid #c89f65;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-  border-color: #a9742a;
-  outline: none;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #deb887;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type="submit"] {
-  background-color: #a9742a;
+  background-color: #a0522d;
   color: white;
-  padding: 15px;
+  padding: 12px;
   border: none;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type="submit"]:hover {
-  background-color: #7b5c15;
+  background-color: #8b4513;
+}
+
+footer {
+  background-color: #deb887;
+  color: #5b3a00;
+  text-align: left;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Galeria estilo Pinterest */
+
 .gallery {
   column-count: 4;
   column-gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto 60px;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 @media (max-width: 1100px) {
@@ -152,12 +138,13 @@ input[type="submit"]:hover {
 .gallery-item {
   background: white;
   display: inline-block;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  break-inside: avoid;
 }
 
 .gallery-item:hover {
@@ -168,25 +155,13 @@ input[type="submit"]:hover {
   width: 100%;
   display: block;
   border-bottom: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
 }
 
 .gallery-item .desc {
   padding: 15px;
-  font-family: 'Open Sans', sans-serif;
-  color: #5a4320dd;
+  color: #5b3a00dd;
   font-size: 1rem;
   text-align: left;
-}
-
-/* Rodapé */
-footer {
-  background-color: #c89f65;
-  color: #4b3a1b;
-  width: 100%;
-  padding: 15px 30px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-align: left;
-  margin-top: auto;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  font-family: 'Open Sans', sans-serif;
 }
