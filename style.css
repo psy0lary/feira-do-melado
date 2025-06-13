@@ -196,3 +196,12 @@ footer {
       }
     }
   /* aqui acaba a galeria */
+
+
+/* Estilização dos parágrafos no conteúdo principal */
+main p {
+  text-align: justify; /* Justifica o texto */
+  text-align-last: center; /* Centraliza o último parágrafo (opcional) */
+  margin: 0 auto; /* Deixa a margem automática para centralizar */
+  width: 80%; /* Ajuste a largura conforme necessário */
+}
