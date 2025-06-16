@@ -5,6 +5,39 @@
   <title>Contato - Feira do Melado</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="jpg/favicon.png" type="image/png" />
+
+  <style>
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      cursor: pointer;
+      line-height: 60px;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe57;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 400px;
+      max-width: 600px;
+      display: block;
+      margin: 30px auto;
+    }
+  </style>
+
+
 </head>
 <body>
 
@@ -21,17 +54,45 @@
 
 <main>
   <h1>📞 Contato</h1>
-  <p>Para mais informações, dúvidas ou sugestões, entre em contato conosco:</p>
-  <ul style="list-style: none; padding: 0; max-width: 500px; margin: 0 auto; text-align: left;">
-    <li>📧 E-mail: <a href="mailto:contato@feiradomelado.com.br">contato@feiradomelado.com.br</a></li>
-    <li>📞 Telefone: (45) 99999-9999</li>
-    <li>🏢 Endereço: Rua Principal, 123 - Centro, Capanema - PR</li>
-    <li>🌐 Site oficial da Prefeitura: <a href="https://www.capanema.pr.gov.br" target="_blank" rel="noopener noreferrer">capanema.pr.gov.br</a></li>
+  <p>Para informações e dúvidas, entre em contato conosco através dos canais abaixo:</p>
+
+  <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
+    <li>🏢 <strong>Prefeitura de Capanema - PR</strong></li>
+    <li>📧 E-mail: <a href="mailto:prefeitura@capanema.pr.gov.br">prefeitura@capanema.pr.gov.br</a></li>
+    <li>📞 Telefone: <a href="tel:+554635521321">(46) 3552-1321</a></li>
+    <li>📍 Endereço: Av. Pedro Viriato Parigot de Souza, 1080 - Centro, Capanema - PR, CEP 85760-000</li>
+    <li>🕒 Horário de Atendimento: Segunda a sexta-feira, das 8h às 11h30 e das 14h às 17h30</li>
+    <li>📱 Instagram: <a href="https://www.instagram.com/prefeituradecapanema" target="_blank" rel="noopener noreferrer">@prefeituradecapanema</a></li>
+  </ul>
+
+  <!-- Mapa do Google Maps -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.395289154849!2d-53.470287685029356!3d-26.914009982094804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f50a8edc251f9f%3A0x3a3d785b6bbd5f17!2sPrefeitura%20Municipal%20de%20Capanema!5e0!3m2!1spt-BR!2sbr!4v1686926190456!5m2!1spt-BR!2sbr"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Mapa da Prefeitura de Capanema">
+  </iframe>
+
+  <hr style="max-width: 600px; margin: 20px auto;" />
+
+  <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
+    <li>📞 <strong>Contato pessoal (WhatsApp):</strong> <a href="tel:+55469999891558">(46) 9 9989-1558</a></li>
   </ul>
 </main>
 
+<!-- Botão flutuante WhatsApp -->
+<a
+  href="https://wa.me/55469999891558"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp">
+  &#x2709;
+</a>
+
 <footer>
-  &copy; 2025 Feira do Melado - Capanema, Paraná
+  &copy; 2025 Feira do Melado – Capanema, Paraná
 </footer>
 
 </body>
