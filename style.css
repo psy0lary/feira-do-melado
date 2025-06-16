@@ -205,3 +205,13 @@ main p {
   margin: 0 auto; /* Deixa a margem automática para centralizar */
   width: 80%; /* Ajuste a largura conforme necessário */
 }
+
+
+.imagem-historia {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
