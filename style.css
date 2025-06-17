@@ -1,191 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeria - Feira do Melado</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon/favicon.png" type="image/png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
-* {
-  box-sizing: border-box;
-}
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #fff8dc;
+      margin: 0;
+      padding: 0;
+      color: #5b3a00;
+      text-align: center;
+    }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: #fff8dc;
-  margin: 0;
-  padding: 0;
-  color: #5b3a00;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  text-align: center;
-  font-size: 1.25rem;
-}
+    header {
+      background-color: #deb887;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-header {
-  background-color: #deb887;
-  padding: 10px 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .logo {
+      height: 60px;
+      margin-right: 20px;
+    }
 
-.logo {
-  height: 60px;
-}
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5b3a00;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
 
-nav {
-  margin-left: 20px;
-}
+    main {
+      padding: 40px 20px;
+    }
 
-nav a {
-  color: #5b3a00;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  font-size: 1.3rem;
-  transition: color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
+    .galeria-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-  color: #8b4513;
-}
+    .galeria-container figure {
+      width: 300px;
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fffdf7;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
 
-main {
-  max-width: 800px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-family: 'Lora', serif;
-  text-align: center;
-  font-size: 1.35rem;
-}
+    .galeria-container figure:hover {
+      transform: scale(1.03);
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
-}
+    .galeria-container img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
 
-input[type="text"],
-input[type="email"] {
-  padding: 14px;
-  margin: 14px 0;
-  border: 2px solid #deb887;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-}
+    .galeria-container figcaption {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      padding: 12px 16px;
+      text-align: center;
+      color: #4b2e15;
+      background-color: #f8e7cd;
+      font-style: italic;
+      letter-spacing: 0.3px;
+      border-top: 1px solid #e0c8a2;
+    }
 
-input[type="submit"] {
-  background-color: #a0522d;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.25rem;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
+    footer {
+      background-color: #deb887;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
 
-input[type="submit"]:hover {
-  background-color: #8b4513;
-}
+    @media (max-width: 950px) {
+      .galeria-container figure {
+        width: 45%;
+      }
+    }
 
-footer {
-  background-color: #deb887;
-  color: #5b3a00;
-  text-align: left;
-  padding: 12px 20px;
-  width: 100%;
-  margin-top: auto;
-  font-size: 1.05rem;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-}
+    @media (max-width: 600px) {
+      .galeria-container figure {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
 
-/* Galeria com legendas elegantes */
+<header>
+  <img class="logo" src="logo/brasao_municipal.png" alt="Logo Prefeitura de Capanema" />
+  <nav>
+    <a href="inicio.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
 
-.galeria-container {
-  column-count: 3;
-  column-gap: 20px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
+<main>
+  <h1>📸 Galeria da Feira do Melado</h1>
+  <p>Veja os momentos mais doces da nossa feira! 🍯</p>
 
-figure {
-  break-inside: avoid;
-  margin: 0 0 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
+  <div class="galeria-container">
 
-figure:hover {
-  transform: translateY(-6px);
-}
+    <figure>
+      <img src="jpg/1000039977 (1280×720)imagem-1.jpg" alt="Melado" />
+      <figcaption>Produção artesanal de melado</figcaption>
+    </figure>
 
-figure img {
-  width: 100%;
-  display: block;
-}
+    <figure>
+      <img src="jpg/1000039979 (1280×720)imagem-2.jpg" alt="Festival" />
+      <figcaption>Festival com música e alegria</figcaption>
+    </figure>
 
-figcaption {
-  background: linear-gradient(135deg, #fdf7ee, #f9e5c9);
-  color: #5c3b1d;
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 14px 16px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
-  border-top: 1px solid #e5d1b2;
-  transition: background-color 0.3s ease;
-}
+    <figure>
+      <img src="jpg/1000039978 (1280×720)imagem-3.jpg" alt="Capanema" />
+      <figcaption>Vista do evento em Capanema</figcaption>
+    </figure>
 
-figure:hover figcaption {
-  background: linear-gradient(135deg, #f9ecda, #f4d7b8);
-}
+    <figure>
+      <img src="jpg/1000039976 (1280×720)imagem-4.jpg" alt="Música" />
+      <figcaption>Show ao vivo na praça central</figcaption>
+    </figure>
 
-/* Responsivo */
-@media (max-width: 900px) {
-  .galeria-container {
-    column-count: 2;
-  }
-}
+    <figure>
+      <img src="jpg/1000039980 (1280×720)imagem-5.jpg" alt="Público" />
+      <figcaption>Grande participação do público</figcaption>
+    </figure>
 
-@media (max-width: 600px) {
-  .galeria-container {
-    column-count: 1;
-  }
-}
+    <figure>
+      <img src="jpg/1000039975 (1280×720)imagem-6.jpg" alt="Comida típica" />
+      <figcaption>Comidas típicas da região</figcaption>
+    </figure>
 
-/* Parágrafos */
-main p {
-  text-align: justify;
-  text-align-last: center;
-  margin: 0 auto;
-  width: 80%;
-  font-size: 1.35rem;
-}
+    <!-- Adicione mais imagens com esse mesmo padrão -->
+    
+  </div>
+</main>
 
-/* Imagens em outras páginas */
-.imagem-historia,
-.imagem-sobre {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+<footer>
+  &copy; 2025 Feira do Melado - Capanema, Paraná
+</footer>
+
+</body>
+</html>
