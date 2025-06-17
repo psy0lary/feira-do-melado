@@ -6,7 +6,29 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon/favicon.png" type="image/png" />
   <style>
-    
+    .galeria-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .galeria-container figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .galeria-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .galeria-container figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #5b3a00;
+    }
   </style>
 </head>
 <body>
@@ -27,45 +49,38 @@
   <p>Veja os momentos mais doces da nossa feira! 🍯</p>
 
   <div class="galeria-container">
-    <img src="jpg/1000039977 (1280×720)imagem-1.jpg" alt="Melado" />
-    <img src="jpg/1000039979 (1280×720)imagem-2.jpg" alt="Festival" />
-    <img src="jpg/1000039978 (1280×720)imagem-3.jpg" alt="Capanema" />
-    <img src="jpg/1000039976 (1280×720)imagem-4.jpg" alt="Música" />
-    <img src="jpg/1000039980 (1280×720)imagem-5.jpg" alt="Público" />
-    <img src="jpg/1000039975 (1280×720)imagem-6.jpg" alt="Comida típica" />
-    <img src="jpg/1e10ccf7-22-foto-04-800x445-24.jpg" alt="Melado" />
-    <img src="jpg/7-Leg-1.jpeg" alt="Festival" />
-    <img src="jpg/08-AGOSTO-3-5.jpg" alt="Capanema" />
-    <img src="jpg/064-melado-1-23.png" alt="Música" />
-    <img src="jpg/Capa-Capanema-1-1024x768-3.jpg" alt="Público" />
-    <img src="jpg/capa-capanema2.jpg" alt="Comida típica" />
-    <img src="jpg/capa-cmyk---feira-do-melado-14.jpg" alt="Melado" />
-    <img src="jpg/dc3cacd8-1534879430-5b7c671a867c8_governadora_foto_01-800x445-15.jpg" alt="Festival" />
-    <img src="jpg/facia_creditos_fabio_rezende_2-8.jpg" alt="Capanema" />
-    <img src="jpg/Feira-do-Melado-2022-23.jpg" alt="Música" />
-    <img src="jpg/feira2-7.jpg" alt="Público" />
-    <img src="jpg/g_7610-16.jpg" alt="Comida típica" />
-    <img src="jpg/g_foto10815-4.jpg.crdownload" alt="Melado" />
-    <img src="jpg/melado_1_0-17.jpg" alt="Festival" />
-    <img src="jpg/melado_2-18.jpg" alt="Capanema" />
-    <img src="jpg/melado_4-19.jpg" alt="Música" />
-    <img src="jpg/melado_6-20.jpg" alt="Público" />
-    <img src="jpg/melado_7-21.jpg" alt="Comida típica" />
-    <img src="jpg/melado_9-22.jpg" alt="Melado" />
-    <img src="jpg/melado_capanema-07-25.jpg" alt="Festival" />
-    <img src="jpg/melado_capanema-27-12.jpg" alt="Capanema" />
-    <img src="jpg/melado_capanema-43-13.jpg" alt="Música" />
-    <img src="jpg/melado_de_capanema_8_-_creditos_gabriel_rosa_aen-9.jpg" alt="Público" />
-    <img src="jpg/simposio_do_leite_de_perola_-_creditos_divulgacao_1-10.jpg" alt="Comida típica" />
-    <img src="jpg/simposio_do_leite_de_perola_-_creditos_divulgacao_2-11.jpg" alt="Melado" />
-    <img src="jpg/Ultima-1024x768-6.jpg" alt="Melado" />
-
-
-
- 
-
-
-    <!-- Adicione mais imagens como quiser -->
+    <figure><img src="jpg/1000039977 (1280×720)imagem-1.jpg" alt="Melado"><figcaption>Preparação artesanal do melado</figcaption></figure>
+    <figure><img src="jpg/1000039979 (1280×720)imagem-2.jpg" alt="Festival"><figcaption>Palco principal do festival</figcaption></figure>
+    <figure><img src="jpg/1000039978 (1280×720)imagem-3.jpg" alt="Capanema"><figcaption>Vista da entrada do evento</figcaption></figure>
+    <figure><img src="jpg/1000039976 (1280×720)imagem-4.jpg" alt="Música"><figcaption>Apresentações musicais ao vivo</figcaption></figure>
+    <figure><img src="jpg/1000039980 (1280×720)imagem-5.jpg" alt="Público"><figcaption>Público reunido na praça central</figcaption></figure>
+    <figure><img src="jpg/1000039975 (1280×720)imagem-6.jpg" alt="Comida típica"><figcaption>Delícias da culinária local</figcaption></figure>
+    <figure><img src="jpg/1e10ccf7-22-foto-04-800x445-24.jpg" alt="Melado"><figcaption>Degustação de melado artesanal</figcaption></figure>
+    <figure><img src="jpg/7-Leg-1.jpeg" alt="Festival"><figcaption>Desfile cultural na feira</figcaption></figure>
+    <figure><img src="jpg/08-AGOSTO-3-5.jpg" alt="Capanema"><figcaption>Barracas tradicionais na feira</figcaption></figure>
+    <figure><img src="jpg/064-melado-1-23.png" alt="Música"><figcaption>Show musical regional</figcaption></figure>
+    <figure><img src="jpg/Capa-Capanema-1-1024x768-3.jpg" alt="Público"><figcaption>Famílias curtindo o evento</figcaption></figure>
+    <figure><img src="jpg/capa-capanema2.jpg" alt="Comida típica"><figcaption>Produtos coloniais à venda</figcaption></figure>
+    <figure><img src="jpg/capa-cmyk---feira-do-melado-14.jpg" alt="Melado"><figcaption>Melado espesso sendo fervido</figcaption></figure>
+    <figure><img src="jpg/dc3cacd8-1534879430-5b7c671a867c8_governadora_foto_01-800x445-15.jpg" alt="Festival"><figcaption>Presença de autoridades no evento</figcaption></figure>
+    <figure><img src="jpg/facia_creditos_fabio_rezende_2-8.jpg" alt="Capanema"><figcaption>Tradição e cultura em destaque</figcaption></figure>
+    <figure><img src="jpg/Feira-do-Melado-2022-23.jpg" alt="Música"><figcaption>Bandas locais animando a festa</figcaption></figure>
+    <figure><img src="jpg/feira2-7.jpg" alt="Público"><figcaption>Multidão prestigiando a feira</figcaption></figure>
+    <figure><img src="jpg/g_7610-16.jpg" alt="Comida típica"><figcaption>Feira de doces típicos</figcaption></figure>
+    <figure><img src="jpg/g_foto10815-4.jpg.crdownload" alt="Melado"><figcaption>Processo de cozimento do melado</figcaption></figure>
+    <figure><img src="jpg/melado_1_0-17.jpg" alt="Festival"><figcaption>Crianças brincando na feira</figcaption></figure>
+    <figure><img src="jpg/melado_2-18.jpg" alt="Capanema"><figcaption>Paisagens de Capanema decoradas</figcaption></figure>
+    <figure><img src="jpg/melado_4-19.jpg" alt="Música"><figcaption>Show com artistas locais</figcaption></figure>
+    <figure><img src="jpg/melado_6-20.jpg" alt="Público"><figcaption>Turistas visitando a feira</figcaption></figure>
+    <figure><img src="jpg/melado_7-21.jpg" alt="Comida típica"><figcaption>Venda de produtos coloniais</figcaption></figure>
+    <figure><img src="jpg/melado_9-22.jpg" alt="Melado"><figcaption>Melado sendo envasado</figcaption></figure>
+    <figure><img src="jpg/melado_capanema-07-25.jpg" alt="Festival"><figcaption>Feira movimentada em dia ensolarado</figcaption></figure>
+    <figure><img src="jpg/melado_capanema-27-12.jpg" alt="Capanema"><figcaption>Decoração típica da cidade</figcaption></figure>
+    <figure><img src="jpg/melado_capanema-43-13.jpg" alt="Música"><figcaption>Artistas animando o público</figcaption></figure>
+    <figure><img src="jpg/melado_de_capanema_8_-_creditos_gabriel_rosa_aen-9.jpg" alt="Público"><figcaption>Público de todas as idades</figcaption></figure>
+    <figure><img src="jpg/simposio_do_leite_de_perola_-_creditos_divulgacao_1-10.jpg" alt="Comida típica"><figcaption>Produtos derivados de leite</figcaption></figure>
+    <figure><img src="jpg/simposio_do_leite_de_perola_-_creditos_divulgacao_2-11.jpg" alt="Melado"><figcaption>Exposição de produtores locais</figcaption></figure>
+    <figure><img src="jpg/Ultima-1024x768-6.jpg" alt="Melado"><figcaption>Encerramento da Feira do Melado</figcaption></figure>
   </div>
 </main>
 
