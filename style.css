@@ -99,16 +99,17 @@ input[type="submit"]:hover {
 }
 
 footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background-color: #f8f8f8; /* Cor de fundo clara */
-  border-top: 1px solid #e7e7e7; /* Borda superior sutil */
-  margin-top: 2rem; /* Espaço acima do footer */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.9rem;
-  color: #555;
-};
+  background-color: #deb887;
+  color: #5b3a00;
+  text-align: center; /* Centralizado */
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: auto;
+  font-size: 1.05rem; /* AUMENTADO */
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
 }
+
 
 /* Galeria estilo Pinterest */
 
