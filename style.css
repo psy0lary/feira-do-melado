@@ -14,8 +14,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center; /* centraliza horizontalmente */
-  text-align: center;  /* centraliza texto */
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem; /* AUMENTADO */
 }
 
 header {
@@ -23,7 +24,7 @@ header {
   padding: 10px 20px;
   width: 100%;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center;
   align-items: center;
 }
 
@@ -40,7 +41,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* AUMENTADO */
   transition: color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
 }
@@ -56,7 +57,8 @@ main {
   margin: 40px auto;
   padding: 0 20px;
   font-family: 'Lora', serif;
-  text-align: center; /* centraliza só conteúdo principal */
+  text-align: center;
+  font-size: 1.35rem; /* AUMENTADO */
 }
 
 form {
@@ -70,22 +72,22 @@ form {
 
 input[type="text"],
 input[type="email"] {
-  padding: 12px;
-  margin: 12px 0;
+  padding: 14px;
+  margin: 14px 0;
   border: 2px solid #deb887;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem; /* AUMENTADO */
   font-family: 'Open Sans', sans-serif;
 }
 
 input[type="submit"] {
   background-color: #a0522d;
   color: white;
-  padding: 12px;
+  padding: 14px;
   border: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.25rem; /* AUMENTADO */
   cursor: pointer;
   margin-top: 15px;
   transition: background-color 0.3s ease;
@@ -103,7 +105,7 @@ footer {
   padding: 12px 20px;
   width: 100%;
   margin-top: auto;
-  font-size: 0.9rem;
+  font-size: 1.05rem; /* AUMENTADO */
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
 }
@@ -161,62 +163,51 @@ footer {
 .gallery-item .desc {
   padding: 15px;
   color: #5b3a00dd;
-  font-size: 1rem;
+  font-size: 1.2rem; /* AUMENTADO */
   text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
 
-
-/* aqui começa o estilo da galeria*/
+/* Galeria extra */
 .galeria-container {
-      column-count: 3;
-      column-gap: 20px;
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .galeria-container img {
-      width: 100%;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-      break-inside: avoid;
-    }
-
-    @media (max-width: 900px) {
-      .galeria-container {
-        column-count: 2;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .galeria-container {
-        column-count: 1;
-      }
-    }
-  /* aqui acaba a galeria */
-
-
-/* Estilização dos parágrafos no conteúdo principal */
-main p {
-  text-align: justify; /* Justifica o texto */
-  text-align-last: center; /* Centraliza o último parágrafo (opcional) */
-  margin: 0 auto; /* Deixa a margem automática para centralizar */
-  width: 80%; /* Ajuste a largura conforme necessário */
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-
-.imagem-historia {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
+.galeria-container img {
+  width: 100%;
+  margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  break-inside: avoid;
 }
 
+@media (max-width: 900px) {
+  .galeria-container {
+    column-count: 2;
+  }
+}
 
+@media (max-width: 600px) {
+  .galeria-container {
+    column-count: 1;
+  }
+}
+
+/* Parágrafos */
+main p {
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.35rem; /* AUMENTADO */
+}
+
+/* Imagens */
+.imagem-historia,
 .imagem-sobre {
   display: block;
   max-width: 100%;
@@ -225,4 +216,3 @@ main p {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
