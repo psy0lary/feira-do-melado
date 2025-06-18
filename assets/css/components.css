@@ -27,35 +27,43 @@
       margin: 30px auto;
     }
 
-/* Botão flutuante WhatsApp termina aqui*/
-
-/* Botões do cadastro*/
+/* Botões do cadastro (versão com button) */
 input[type="text"],
 input[type="email"] {
   padding: 14px;
   margin: 14px 0;
   border: 2px solid #deb887;
   border-radius: 8px;
-  font-size: 1.2rem; /* AUMENTADO */
+  font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
 }
 
-input[type="submit"] {
+/* Substituição do input submit por button - mantendo o mesmo estilo */
+button, 
+button[type="submit"] {
   background-color: #a0522d;
   color: white;
   padding: 14px;
   border: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.25rem; /* AUMENTADO */
+  font-size: 1.25rem;
   cursor: pointer;
   margin-top: 15px;
   transition: background-color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
+  /* Adicionado para garantir compatibilidade total */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block; /* Mantém o mesmo comportamento do input */
+  text-align: center;
+  line-height: normal; /* Remove estilos padrão de alguns navegadores */
 }
 
-input[type="submit"]:hover {
+button:hover,
+button[type="submit"]:hover {
   background-color: #8b4513;
 }
 
-/* fim Botões do cadastro*/
+/* fim Botões do cadastro */
