@@ -5,6 +5,6 @@ main p {
   margin: 0 auto;             /* Centraliza o parágrafo */
   width: 150%;                 /* Largura do parágrafo será 100% da tela */
   font-size: 1.35rem;         /* Aumenta o tamanho da fonte */
-  max-width: 100%;            /* Garante que o parágrafo nunca ultrapasse a largura da tela */
+  max-width: 150%;            /* Garante que o parágrafo nunca ultrapasse a largura da tela */
   box-sizing: border-box;     /* Inclui padding e border no cálculo da largura */
 }
