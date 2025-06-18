@@ -1,13 +1,3 @@
-/* ----- BOTÕES DO FORMULÁRIO (AGORA COM BUTTON) ----- */
-input[type="text"],
-input[type="email"] {
-  padding: 14px;
-  margin: 14px 0;
-  border: 2px solid #deb887;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-}
 
 button {
   background-color: #a0522d;
@@ -32,7 +22,7 @@ button:hover {
   background-color: #8b4513;
 }
 
-/* ----- SEUS OUTROS ESTILOS ORIGINAIS ----- */
+/* ----- ESTILOS ORIGINAIS ----- */
 .whatsapp-float {
   position: fixed;
   width: 60px;
