@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
-/* Cores atualizadas para acessibilidade */
-:root {
-  --marrom-escuro: #3A2800;  /* Contraste aumentado */
-  --marrom-medio: #8B4513;
-  --bege-claro: #FFF8DC;
-  --bege-escuro: #DEB887;
-  --dourado: #D4A762;
-  --dourado-hover: #B38C4A;
-  --fundo-form: #F9F5EB;
-  --texto-form: #5A4A30;
-}
+@import url('assets/css/imagens.css');
+@import url('assets/css/components.css');
+@import url('assets/css/textos.css');
+
+
 
 * {
   box-sizing: border-box;
@@ -18,21 +12,21 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: var(--bege-claro);
+  background: #fff8dc;
   margin: 0;
   padding: 0;
-  color: var(--marrom-escuro); /* Cor mais escura */
+  color: #5b3a00;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* AUMENTADO */
 }
 
-/* HEADER - Contraste garantido */
 header {
-  background-color: var(--bege-escuro);
+  background-color: #deb887;
   padding: 10px 20px;
   width: 100%;
   display: flex;
@@ -45,23 +39,20 @@ nav {
 }
 
 nav a {
-  color: var(--marrom-escuro); /* Texto mais escuro */
+  color: #5b3a00;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
-  font-size: 1.3rem;
-  transition: all 0.3s ease;
+  font-size: 1.3rem; /* AUMENTADO */
+  transition: color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
 }
 
-nav a:hover,
-nav a:focus { /* Estado focus adicionado */
+nav a:hover {
   text-decoration: underline;
-  color: var(--marrom-medio);
-  outline: 2px solid var(--marrom-medio);
-  outline-offset: 3px;
+  color: #8b4513;
 }
 
-/* MAIN - Contraste naturalmente bom */
 main {
   max-width: 800px;
   width: 100%;
@@ -69,19 +60,41 @@ main {
   padding: 0 20px;
   font-family: 'Lora', serif;
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.35rem; /* AUMENTADO */
 }
 
-/* FORMULÁRIO - Contraste corrigido */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+
+footer {
+  background-color: #deb887;
+  color: #5b3a00;
+  text-align: center; /* Centralizado */
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: auto;
+  font-size: 1.05rem; /* AUMENTADO */
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 .formulario-interesse {
-  background-color: var(--fundo-form);
+  background-color: #f9f5eb;
   padding: 20px;
   border-radius: 8px;
   margin-top: 30px;
 }
 
 .formulario-interesse h2 {
-  color: var(--marrom-medio); /* Cor mais contrastante */
+  color: #8a6d3b;
   margin-top: 0;
 }
 
@@ -93,7 +106,7 @@ main {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: var(--texto-form);
+  color: #5a4a30;
 }
 
 .formulario-interesse input,
@@ -101,19 +114,18 @@ main {
 .formulario-interesse textarea {
   width: 100%;
   padding: 10px;
-  border: 2px solid var(--dourado); /* Borda mais espessa */
+  border: 1px solid #d4a762;
   border-radius: 4px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .formulario-interesse textarea {
   resize: vertical;
 }
 
-/* BOTÃO - Contraste corrigido */
 .formulario-interesse button {
-  background-color: var(--dourado);
-  color: white; /* Texto branco para contraste */
+  background-color: #d4a762;
+  color: rgb(225, 192, 157);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -122,30 +134,6 @@ main {
   transition: background-color 0.3s;
 }
 
-.formulario-interesse button:hover,
-.formulario-interesse button:focus {
-  background-color: var(--dourado-hover);
-  outline: 2px solid var(--marrom-escuro);
-}
-
-/* FOOTER - Contraste aumentado */
-footer {
-  background-color: var(--bege-escuro);
-  color: var(--marrom-escuro); /* Texto mais escuro */
-  text-align: center;
-  padding: 12px 20px;
-  width: 100%;
-  margin-top: auto;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-/* Estados de foco para acessibilidade */
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 2px solid var(--marrom-medio);
-  outline-offset: 3px;
+.formulario-interesse button:hover {
+  background-color: #b38c4a;
 }
