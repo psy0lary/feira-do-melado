@@ -1,4 +1,4 @@
-
+/* Botão flutuante WhatsApp */
 button {
   background-color: #a0522d;
   color: white;
@@ -51,6 +51,8 @@ iframe {
   display: block;
   margin: 30px auto;
 }
+/* Fim Botão flutuante WhatsApp */
+
 /* Botões do cadastro*/
 input[type="text"],
 input[type="email"] {
