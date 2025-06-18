@@ -2,6 +2,8 @@
 
 @import url('assets/css/imagens.css');
 @import url('assets/css/components.css');
+@import url('assets/css/layout.css');
+
 
 
 * {
@@ -257,16 +259,6 @@ footer {
   }
 }
 
-/* Parágrafos */
-main p {
-  text-align: justify;        /* Justifica o texto */
-  text-align-last: center;    /* Centraliza a última linha do parágrafo */
-  margin: 0 auto;             /* Centraliza o parágrafo */
-  width: 80%;                 /* Largura do parágrafo será 80% da tela */
-  font-size: 1.35rem;         /* Aumenta o tamanho da fonte */
-  max-width: 100%;            /* Garante que o parágrafo nunca ultrapasse a largura da tela */
-  box-sizing: border-box;     /* Inclui padding e border no cálculo da largura */
-}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -274,4 +266,3 @@ main p {
     width: 90%;               /* Aumenta a largura para 90% da tela em dispositivos menores */
   }
 }
-

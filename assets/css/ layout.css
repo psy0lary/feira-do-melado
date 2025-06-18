@@ -1,0 +1,10 @@
+/* Parágrafos */
+main p {
+  text-align: justify;        /* Justifica o texto */
+  text-align-last: center;    /* Centraliza a última linha do parágrafo */
+  margin: 0 auto;             /* Centraliza o parágrafo */
+  width: 80%;                 /* Largura do parágrafo será 80% da tela */
+  font-size: 1.35rem;         /* Aumenta o tamanho da fonte */
+  max-width: 100%;            /* Garante que o parágrafo nunca ultrapasse a largura da tela */
+  box-sizing: border-box;     /* Inclui padding e border no cálculo da largura */
+}
