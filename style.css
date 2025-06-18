@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 @import url('assets/css/6_gallery.css');
-
+@import url('assets/css/5_components.css');
 * {
   box-sizing: border-box;
 }
@@ -285,34 +285,4 @@ main p {
 }
 
 
-/* Botão flutuante WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-      z-index: 1000;
-      cursor: pointer;
-      line-height: 60px;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe57;
-    }
-    iframe {
-      border: 0;
-      width: 100%;
-      height: 400px;
-      max-width: 600px;
-      display: block;
-      margin: 30px auto;
-    }
-
-/* Botão flutuante WhatsApp termina aqui*/
 
