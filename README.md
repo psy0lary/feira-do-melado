@@ -1,4 +1,4 @@
-Feira do Melado - Sabores e Histórias
+# Feira do Melado - Sabores e Histórias
 
 ![Logo ou Imagem do Projeto](readme/inicio.png)
 
@@ -29,7 +29,7 @@ Com a temática **"Festejando a Conexão Campo e Cidade"**, a plataforma serve c
 ![Exemplo de tela](readme/readmegaleria.png)
 - **História da Feira**: Uma seção dedicada a contar como a Feira do Melado começou e como ela cresceu ao longo dos anos.
 - **Informações de Contato**: Detalhes de como entrar em contato com os organizadores ou obter mais informações sobre o evento.
-**Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele ja esta cadastrado é so clicar em entrar.
+-  **Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele ja esta cadastrado é so clicar em entrar.
 - **Demonstre Interesse**: Aqui é onde os usarios demostrarão interesse "caso houver" devererão inserir o email ou o telefone, o nome completo, selecionar o interesse e se quiser é possivel adicionar uma mensagem.
 
 ## Como Rodar o Projeto
