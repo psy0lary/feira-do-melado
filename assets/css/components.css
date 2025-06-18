@@ -27,7 +27,9 @@
       margin: 30px auto;
     }
 
-/* Botões do cadastro (versão com button) */
+/* ----- BOTÕES (SUBSTITUIÇÃO input[type="submit"] -> button) ----- */
+/* CONSERVA EXATAMENTE O MESMO VISUAL ORIGINAL */
+
 input[type="text"],
 input[type="email"] {
   padding: 14px;
@@ -38,9 +40,8 @@ input[type="email"] {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Substituição do input submit por button - mantendo o mesmo estilo */
-button, 
-button[type="submit"] {
+/* ▼▼▼ ESTILO ORIGINAL DO INPUT, AGORA APLICADO AO BUTTON ▼▼▼ */
+button {
   background-color: #a0522d;
   color: white;
   padding: 14px;
@@ -52,18 +53,16 @@ button[type="submit"] {
   margin-top: 15px;
   transition: background-color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
-  /* Adicionado para garantir compatibilidade total */
+  /* Reset de estilos nativos do botão */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: inline-block; /* Mantém o mesmo comportamento do input */
+  /* Garante compatibilidade com o input original */
+  display: inline-block;
   text-align: center;
-  line-height: normal; /* Remove estilos padrão de alguns navegadores */
+  line-height: normal;
 }
 
-button:hover,
-button[type="submit"]:hover {
+button:hover {
   background-color: #8b4513;
 }
-
-/* fim Botões do cadastro */
