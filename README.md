@@ -33,6 +33,7 @@ Com a temática **"Festejando a Conexão Campo e Cidade"**, a plataforma serve c
 ![Exemplo de tela](readme/readmegaleria.png)
 
 **Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele ja esta cadastrado é so clicar em entrar.
+- **Demonstre Interesse**: Aqui é onde os usarios demostrarão interesse "caso ouver" devererão inserir o email ou o telefone, o nome completo, selecionar o interesse e se quiser é possivel adicionar uma mensagem.
 
 ## Como Rodar o Projeto
 
@@ -53,6 +54,10 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 HTML: Utilizado em todas as páginas do projeto, garantindo uma estrutura semântica e acessível. Cada guia do site é construída com HTML, o que facilita a organização e manutenção do conteúdo.
 
 CSS: Usado para estilizar o site, garantindo um layout responsivo e visualmente agradável. O CSS é fundamental para dar vida ao design, aplicando cores, fontes, espaçamentos e animações nas páginas.
+
+DEEPSEEK: Utilizado para concertar codigos, garantindo um site sem eros visuais.
+
+CHATGPT: Usado para pesquisar sobre a feira, sua história e sobre.
 
 
 ## Estrutura de Pastas
