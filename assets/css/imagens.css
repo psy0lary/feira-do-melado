@@ -62,6 +62,35 @@
 
 /* fim da Imagens da historia e sobre*/
 
+/* Container para imagens com legenda (NOVO ESTILO ADICIONADO) */
+.figure-container {
+  display: block;
+  max-width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.figure-container .imagem-historia,
+.figure-container .imagem-sobre {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.figure-container .figcaption {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .figure-container {
+    max-width: 95%;
+  }
+}
+
 /* logo */
 .logo {
   height: 60px;
