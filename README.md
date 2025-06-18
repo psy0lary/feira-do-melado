@@ -12,9 +12,6 @@
 - [Como Rodar o Projeto](#como-rodar-o-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Estrutura de Pastas](#estrutura-de-pastas)
-- [Exemplos de Uso](#exemplos-de-uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ---
 
