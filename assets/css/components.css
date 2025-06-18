@@ -1,32 +1,67 @@
-/* Botão flutuante WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-      z-index: 1000;
-      cursor: pointer;
-      line-height: 60px;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe57;
-    }
-    iframe {
-      border: 0;
-      width: 100%;
-      height: 400px;
-      max-width: 600px;
-      display: block;
-      margin: 30px auto;
-    }
+/* ----- BOTÕES DO FORMULÁRIO (AGORA COM BUTTON) ----- */
+input[type="text"],
+input[type="email"] {
+  padding: 14px;
+  margin: 14px 0;
+  border: 2px solid #deb887;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
 
+button {
+  background-color: #a0522d;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: auto;
+}
+
+button:hover {
+  background-color: #8b4513;
+}
+
+/* ----- SEUS OUTROS ESTILOS ORIGINAIS ----- */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  cursor: pointer;
+  line-height: 60px;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  display: block;
+  margin: 30px auto;
+}
 /* Botões do cadastro*/
 input[type="text"],
 input[type="email"] {
