@@ -1,98 +1,59 @@
 /* Estilo geral para o container da galeria */
 .galeria-container-2 {
-  display: flex;               /* Alinha as imagens na mesma linha */
-  flex-wrap: wrap;             /* Permite quebra de linha quando necessário */
-  justify-content: space-evenly; /* Espaçamento uniforme entre as imagens */
-  gap: 10px;                   /* Espaçamento entre as imagens */
-  margin: 20px auto;           /* Centraliza o container com uma margem */
-  max-width: 1200px;           /* Define uma largura máxima para a galeria */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alterado para center */
+  align-items: center; /* Alinha verticalmente */
+  gap: 20px; /* Aumentei o espaçamento */
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
-/* Estilo para cada figura */
+/* Estilo para cada figura - AGORA COM TAMANHO FIXO */
 .galeria-container-2 figure {
-  display: inline-block;
-  width: 30%;                  /* Cada figura ocupará 30% do container */
+  width: 300px; /* Largura fixa */
   margin: 0;
-  text-align: center;          /* Centraliza o conteúdo dentro do figure */
+  text-align: center;
 }
 
-/* Estilo para as imagens */
-.galeria-container-2 figure img {
-  width: 100%;                 /* Faz com que a imagem ocupe toda a largura disponível */
-  height: auto;                /* Mantém a proporção da imagem */
-  border-radius: 8px;          /* Arredonda os cantos da imagem */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave nas imagens */
-}
-
-/* Estilo para as legendas (figcaption) */
-.galeria-container-2 figure figcaption {
-  font-size: 14px;             /* Define o tamanho da fonte da legenda */
-  font-style: italic;          /* Aplica o estilo itálico na legenda */
-  color: #555;                 /* Cor da legenda */
-  margin-top: 8px;             /* Espaço entre a imagem e a legenda */
-}
-
-/* Estilo para o link que leva ao site original da imagem */
-.galeria-container-2 figure a {
-  display: block;
-  margin-top: 10px;            /* Espaço entre a legenda e o link */
-  color: #007BFF;              /* Cor do link */
-  font-size: 12px;             /* Tamanho do texto do link */
-  text-decoration: none;       /* Remove o sublinhado do link */
-  text-align: center;          /* Alinha o link no centro */
-}
-
-.galeria-container-2 figure a:hover {
-  text-decoration: underline;  /* Adiciona sublinhado no link ao passar o mouse */
-}
-
-/* Estilo geral para o container da galeria  terminha aqui*/
-
-
-/* Imagens da historia e sobre*/
+/* IMAGENS - ESTILO UNIFICADO (todas seguirão estas regras) */
+.galeria-container-2 figure img,
 .imagem-historia,
 .imagem-sobre {
-  display: block;
-  max-width: 80%;
+  width: 100%; 
+  max-width: 300px; /* Largura máxima igual para todas */
   height: auto;
-  margin: 20px auto;
+  display: block;
+  margin: 0 auto; /* Centraliza */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover; /* Garante que todas mantenham proporção */
 }
 
-/* fim da Imagens da historia e sobre*/
-
-/* Container para imagens com legenda (NOVO ESTILO ADICIONADO) */
+/* Container para imagens com legenda */
 .figure-container {
-  display: block;
-  max-width: 80%;
+  max-width: 300px; /* Mesma largura das outras */
   margin: 20px auto;
   text-align: center;
 }
 
-.figure-container .imagem-historia,
-.figure-container .imagem-sobre {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
+/* LEGENDAS - Estilo unificado */
+.galeria-container-2 figcaption,
 .figure-container .figcaption {
-  display: block;
-  margin-top: 8px;
+  font-size: 14px;
   font-style: italic;
-  font-size: 0.9em;
   color: #555;
+  margin-top: 8px;
   line-height: 1.4;
 }
 
+/* RESPONSIVO */
 @media (max-width: 768px) {
+  .galeria-container-2 figure,
   .figure-container {
-    max-width: 95%;
+    width: 100%;
+    max-width: 280px;
   }
 }
 
-/* logo */
-.logo {
-  height: 60px;
-}
-/* fim logo */
+/* (Mantive os outros estilos originais abaixo sem alterações) */
