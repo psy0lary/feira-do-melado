@@ -1,0 +1,36 @@
+/* Estilos para formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 14px;
+  margin: 14px 0;
+  border: 2px solid #deb887;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #a0522d;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #8b4513;
+}

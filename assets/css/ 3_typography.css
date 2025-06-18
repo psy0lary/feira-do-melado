@@ -1,0 +1,32 @@
+/* Estilos de tipografia para o conteúdo principal */
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+/* Estilos para parágrafos */
+main p {
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.35rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para imagens */
+.imagem-historia,
+.imagem-sobre {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

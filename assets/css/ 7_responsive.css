@@ -1,0 +1,29 @@
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  main p {
+    width: 90%;
+  }
+
+  .gallery {
+    column-count: 2;
+  }
+
+  .galeria-container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
+
+  .galeria-container {
+    column-count: 1;
+  }
+
+  .imagem-historia,
+  .imagem-sobre {
+    max-width: 90%;
+  }
+}

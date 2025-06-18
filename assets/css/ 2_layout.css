@@ -1,0 +1,45 @@
+/* Estilo do cabeçalho */
+header {
+  background-color: #deb887;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #5b3a00;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #8b4513;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #deb887;
+  color: #5b3a00;
+  text-align: center;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: auto;
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
