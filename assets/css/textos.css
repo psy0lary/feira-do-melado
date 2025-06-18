@@ -8,3 +8,10 @@ main p {
   max-width: 100%;            /* Garante que o parágrafo nunca ultrapasse a largura da tela */
   box-sizing: border-box;     /* Inclui padding e border no cálculo da largura */
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  main p {
+    width: 90%;               /* Aumenta a largura para 90% da tela em dispositivos menores */
+  }
+}

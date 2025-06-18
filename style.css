@@ -116,14 +116,3 @@ footer {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
-
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  main p {
-    width: 90%;               /* Aumenta a largura para 90% da tela em dispositivos menores */
-  }
-}
