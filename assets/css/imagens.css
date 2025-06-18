@@ -47,3 +47,17 @@
 }
 
 /* Estilo geral para o container da galeria  terminha aqui*/
+
+
+/* Imagens da historia e sobre*/
+.imagem-historia,
+.imagem-sobre {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* fim da Imagens da historia e sobre*/
