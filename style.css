@@ -1,5 +1,4 @@
-/* Importando os arquivos CSS */
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 @import url('assets/css/1_base.css');
 @import url('assets/css/2_layout.css');
 @import url('assets/css/3_typography.css');

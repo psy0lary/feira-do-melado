@@ -1,22 +1,18 @@
-/* Importando fontes */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
-
-/* Resetando margens e padding */
 * {
   box-sizing: border-box;
 }
 
-/* Configurações gerais do body */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #fff8dc;
   margin: 0;
   padding: 0;
-  color: #5b3a00;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   align-items: center;
   text-align: center;
-  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

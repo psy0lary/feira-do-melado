@@ -1,32 +1,57 @@
-/* Estilos de tipografia para o conteúdo principal */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+}
+
+header nav a {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
 main {
-  max-width: 800px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
   font-family: 'Lora', serif;
-  text-align: center;
   font-size: 1.35rem;
 }
 
-/* Estilos para parágrafos */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+footer {
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
 main p {
   text-align: justify;
   text-align-last: center;
-  margin: 0 auto;
-  width: 80%;
   font-size: 1.35rem;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
-/* Estilos para imagens */
-.imagem-historia,
-.imagem-sobre {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.gallery-item .desc {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.galeria-container-2 figure figcaption {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.galeria-container-2 figure a {
+  font-size: 12px;
 }
