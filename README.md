@@ -26,12 +26,9 @@ Com a temática **"Festejando a Conexão Campo e Cidade"**, a plataforma serve c
 -O site oferece diversas funcionalidades para enriquecer a experiência do usuário:
 
 - **Galeria de Imagens**: Uma coleção de fotos que ilustram a beleza e a diversidade da feira, além das tradições que a cercam.
-- **História da Feira**: Uma seção dedicada a contar como a Feira do Melado começou e como ela cresceu ao longo dos anos.
-- **Guias de Visitação**: Informações úteis sobre como visitar a feira, o que esperar e como aproveitar ao máximo esse evento cultural.
-- **Informações de Contato**: Detalhes de como entrar em contato com os organizadores ou obter mais informações sobre o evento.
-
 ![Exemplo de tela](readme/readmegaleria.png)
-
+- **História da Feira**: Uma seção dedicada a contar como a Feira do Melado começou e como ela cresceu ao longo dos anos.
+- **Informações de Contato**: Detalhes de como entrar em contato com os organizadores ou obter mais informações sobre o evento.
 **Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele ja esta cadastrado é so clicar em entrar.
 - **Demonstre Interesse**: Aqui é onde os usarios demostrarão interesse "caso houver" devererão inserir o email ou o telefone, o nome completo, selecionar o interesse e se quiser é possivel adicionar uma mensagem.
 
