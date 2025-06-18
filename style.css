@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
+@import url('assets/css/6_gallery.css');
+
 * {
   box-sizing: border-box;
 }
@@ -314,53 +316,3 @@ main p {
 
 /* Botão flutuante WhatsApp termina aqui*/
 
-
-/* Estilo geral para o container da galeria */
-.galeria-container-2 {
-  display: flex;               /* Alinha as imagens na mesma linha */
-  flex-wrap: wrap;             /* Permite quebra de linha quando necessário */
-  justify-content: space-evenly; /* Espaçamento uniforme entre as imagens */
-  gap: 10px;                   /* Espaçamento entre as imagens */
-  margin: 20px auto;           /* Centraliza o container com uma margem */
-  max-width: 1200px;           /* Define uma largura máxima para a galeria */
-}
-
-/* Estilo para cada figura */
-.galeria-container-2 figure {
-  display: inline-block;
-  width: 30%;                  /* Cada figura ocupará 30% do container */
-  margin: 0;
-  text-align: center;          /* Centraliza o conteúdo dentro do figure */
-}
-
-/* Estilo para as imagens */
-.galeria-container-2 figure img {
-  width: 100%;                 /* Faz com que a imagem ocupe toda a largura disponível */
-  height: auto;                /* Mantém a proporção da imagem */
-  border-radius: 8px;          /* Arredonda os cantos da imagem */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave nas imagens */
-}
-
-/* Estilo para as legendas (figcaption) */
-.galeria-container-2 figure figcaption {
-  font-size: 14px;             /* Define o tamanho da fonte da legenda */
-  font-style: italic;          /* Aplica o estilo itálico na legenda */
-  color: #555;                 /* Cor da legenda */
-  margin-top: 8px;             /* Espaço entre a imagem e a legenda */
-}
-
-/* Estilo para o link que leva ao site original da imagem */
-.galeria-container-2 figure a {
-  display: block;
-  margin-top: 10px;            /* Espaço entre a legenda e o link */
-  color: #007BFF;              /* Cor do link */
-  font-size: 12px;             /* Tamanho do texto do link */
-  text-decoration: none;       /* Remove o sublinhado do link */
-  text-align: center;          /* Alinha o link no centro */
-}
-
-.galeria-container-2 figure a:hover {
-  text-decoration: underline;  /* Adiciona sublinhado no link ao passar o mouse */
-}
-
-/* Estilo geral para o container da galeria  terminha aqui*/
