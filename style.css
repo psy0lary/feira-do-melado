@@ -255,11 +255,11 @@ footer {
 
 /* Parágrafos */
 main p {
-  text-align: justify;
-  text-align-last: center;
-  margin: 0 auto;
-  width: 80%;
-  font-size: 1.35rem; /* AUMENTADO */
+  text-align: justify;        /* Justifica o texto, alinhando ele de maneira que ocupe toda a largura da linha */
+  text-align-last: center;    /* A última linha do parágrafo será centralizada (útil em parágrafos curtos) */
+  margin: 0 auto;             /* Define margens automáticas nos lados esquerdo e direito, centralizando o parágrafo */
+  width: 80%;                 /* Define a largura do parágrafo em 80% do elemento pai (provavelmente o <main>) */
+  font-size: 1.35rem;         /* Aumenta o tamanho da fonte */
 }
 
 /* Imagens */
