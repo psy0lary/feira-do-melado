@@ -1,9 +1,9 @@
 /* Importando os arquivos CSS */
 
-@import url('/css/1_base.css');
-@import url('/css/2_layout.css');
-@import url('/css/3_typography.css');
-@import url('/css/4_colors.css');
-@import url('/css/5_components.css');
-@import url('/css/6_gallery.css');
-@import url('/css/7_responsive.css');
+@import url('assets/css/1_base.css');
+@import url('assets/css/2_layout.css');
+@import url('assets/css/3_typography.css');
+@import url('assets/css/4_colors.css');
+@import url('assets/css/5_components.css');
+@import url('assets/css/6_gallery.css');
+@import url('assets/css/7_responsive.css');
