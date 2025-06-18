@@ -34,10 +34,6 @@ header {
   align-items: center;
 }
 
-.logo {
-  height: 60px;
-}
-
 nav {
   margin-left: 20px;
 }
@@ -76,33 +72,6 @@ form {
   text-align: left;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: 14px;
-  margin: 14px 0;
-  border: 2px solid #deb887;
-  border-radius: 8px;
-  font-size: 1.2rem; /* AUMENTADO */
-  font-family: 'Open Sans', sans-serif;
-}
-
-input[type="submit"] {
-  background-color: #a0522d;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.25rem; /* AUMENTADO */
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-input[type="submit"]:hover {
-  background-color: #8b4513;
-}
 
 footer {
   background-color: #deb887;
@@ -115,4 +84,3 @@ footer {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
 }
-
