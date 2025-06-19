@@ -28,9 +28,11 @@ Com a temática **"Festejando a Conexão Campo e Cidade"**, a plataforma serve c
 - **Galeria de Imagens**: Uma coleção de fotos que ilustram a beleza e a diversidade da feira, além das tradições que a cercam.
 ![Exemplo de tela](readme/readmegaleria.png)
 - **História da Feira**: Uma seção dedicada a contar como a Feira do Melado começou e como ela cresceu ao longo dos anos.
-- **Informações de Contato**: Detalhes de como entrar em contato com os organizadores ou obter mais informações sobre o evento.
--  **Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele ja esta cadastrado é so clicar em entrar.
+- **Informações de Contato**: Detalhes de como entrar em contato com os organizadores ou obter mais informações sobre o evento. Ao clicar tanto no email, no instagram ou no telefone ele te encaminhará para uma aba fora do site na qual você terá acesso ao instagram " ao clicar no link do instagram", ao email " quando clicar no link do email " e para o telefone " ao clicar no número de telefone".
+-  **Cadastro**: Aqui é onde os usuários iniciam no site e devem cadastrar seu email, se ele já esta cadastrado é so clicar em entrar.
 - **Demonstre Interesse**: Aqui é onde os usarios demostrarão interesse "caso houver" devererão inserir o email ou o telefone, o nome completo, selecionar o interesse e se quiser é possivel adicionar uma mensagem.
+- **Botão Ícone Whatsapp**: Ao clicar no ícone do whatsapp ele te encaminhará para uma nova pagina " o whatsapp " aonde você poderá entar em contato com a autora do site.
+
 
 ## Como Rodar o Projeto
 
