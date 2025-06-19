@@ -52,7 +52,7 @@ HTML: Utilizado em todas as páginas do projeto, garantindo uma estrutura semân
 
 CSS: Usado para estilizar o site, garantindo um layout responsivo e visualmente agradável. O CSS é fundamental para dar vida ao design, aplicando cores, fontes, espaçamentos e animações nas páginas.
 
-DEEPSEEK: Utilizado para concertar codigos, garantindo um site sem eros visuais.
+DEEPSEEK: Utilizado para concertar codigos, garantindo um site sem erros visuais.
 
 CHATGPT: Usado para pesquisar sobre a feira, sua história e sobre.
 
